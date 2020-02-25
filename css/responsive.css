@@ -1,0 +1,570 @@
+/*------------  @media only screen and (max-width:1439px) labtop ------------*/
+@media only screen and (max-width:1439px) {
+    .header { width: 768px;}
+
+    .logo { width: 360px; }
+
+    .logo img { 
+        width: 100px;
+        margin: 20px 0 0 20px;
+    }
+
+    .logo h2 {
+        width: 150px;
+        font-size: 12px;
+        margin: 20px 0 0 10px;
+    }
+
+    .gnb { width: 400px; }
+
+    .gnb li {
+        width: 70px;
+        font-size: 14px;
+    }
+
+    .gnb li:last-child { line-height: 25px; }
+
+    
+    .menu, .sub_menu { width: 768px; }
+
+    .menu li, .sub_menu ul { width: 128px; }
+
+    .sub_menu { 
+        height: 315px;
+        font-size: 14px;
+        z-index: 1;
+    }
+
+    .visual_main { height: 160px; }
+
+    .info { 
+        width: 750px;
+        margin-top: 0;
+    }
+
+    .search { width: 450px; }
+
+    .search > li:first-child { 
+        width: 100px;
+        margin: 0;
+    }
+
+    .search_select { width: 80px; }
+
+    .search > li:nth-child(2) { width: 140px; }
+
+    .search_text { width: 120px;}
+
+    .search > li:nth-child(3) { 
+        width: 70px;
+        margin: 3px 0 0 10px;
+        font-size: 10px;
+    }
+
+    .search_list { font-size: 14px; }
+
+    .close { 
+        width: 300px; 
+        margin-top: 5px;
+    }
+
+    .close li:first-child { display: none; }
+
+    .close li:nth-child(2) { 
+        width: 50px;
+        color: black; 
+        font-weight: bold;
+    }
+
+    .close li { 
+        width: 22px; height: 22px;
+        border-radius: 8px;
+        line-height: 20px;
+        margin-right: 8px;
+    }
+
+    .close li:last-child { margin-right: 0; }
+
+    .section_01 {
+        width: 600px;
+        overflow: unset;
+        margin: 20px 10px;
+    }
+
+    .book_board { 
+        width: 600px; 
+        float: left;
+    }
+
+    .book { width: 600px; height: 270px; }
+
+    .book_label label { width: 299px; }
+
+    .book_sheet > li { width: 199px; }
+
+    .book_sheet > li img { width: 100px; }
+
+    .book_info { 
+        width: 160px;
+        font-size: 12px;
+    }
+
+    .book_info li { height: 22px; }
+
+    .book_info li:last-child {
+        width: 130px; height: 25px;
+        margin-left: 13px;
+        line-height: 25px;
+    }
+
+    .board { width: 600px; height: 310px; } 
+    
+    .board_frame, .board_frame li img { width: 600px; }
+
+    .board_frame { width: 2400px; }
+
+    .tablet_01 { 
+        width: 768px;
+        overflow: hidden;
+    }
+
+    .tablet_icon { display: block; }
+
+    .web_icon { display: none; }
+
+    .icon { 
+        width: 140px; height: 595px; 
+        float: left;
+        padding-top: 10px;
+        margin-top: 20px;
+        background-color: #f0f5f9;
+    }
+
+    .icon li { 
+        width: 120px; 
+        margin: 0 0 13px 10px;
+        font-size: 13px;
+    }
+
+    .icon div { 
+        width: 60px; height: 60px; 
+        margin: 0 0 7px 32px;
+        border: 0;
+    }
+
+    .icon_film { display: none; }
+
+    .icon div img {
+        width: 50px;
+        margin: 0 0 3px 0;
+    }
+
+    .icon li:hover { font-weight: normal; }
+
+    .icon li:hover div { border: 0; }
+
+    .yard { 
+        width: 370px; height: 510px;
+        margin: 10px 0 0 10px;
+        float: left;
+    }
+
+    .yard img { width: 370px; }
+
+    .section_02 { 
+        width: 370px;
+        float: left;
+        overflow: unset;
+        margin: 10px 0 0 0; 
+    }
+
+    .notice, .recommend { 
+        width: 360px;
+        float: unset;
+    }
+
+    .notice { margin-left: 20px; }
+
+    .time_label { margin: 18px 0 10px 15px; }
+
+    .time_info li span { display: none; }
+
+    .time_info li { 
+        width: 230px;
+        margin-left: 15px;
+    }
+
+    .time_sheet { left: 245px; }
+
+    .notice_sheet_02 { width: 370px; }
+
+    .notice_title { 
+        width: 210px;
+        margin-left: 15px;
+    }
+
+    .recommend { 
+        height: 190px;
+        margin: 20px 0 0 20px; 
+    }
+
+    .recommend img { width: 90px; }
+
+    .recommend_info { 
+        width: 240px;
+        margin: 8px 0 0 10px;
+    }
+
+    .recommend_info p { width: 230px; height: 65px; }
+
+    .inner_section_03 { 
+        width: 768px; 
+        margin-top: 30px;
+    }
+
+    .village { width: 350px;}
+
+    .village_info { width: 220px;}
+
+    .village_info br { display: none;}
+
+    .village_info br:last-child { display: block;}
+    
+    .village_map { margin-top: 40px;}
+
+    .village_map img { width: 110px;}
+
+    .village_more { 
+        width: 310px;
+        margin-left: 20px;
+        border-color: #014e9e;
+    }
+
+    .schedule { width: 370px;}
+
+    .schedule_sheet { width: 370px;}
+
+    .class_title li:nth-child(2), .class_age, .class_state, .event_title li:last-child, .event_date li span, .event_place { display: none;}
+
+    .event_title li:first-child, .event_name { width: 240px;}
+
+    .event_title li:nth-child(2), .event_date { width: 100px;}
+
+    .footer_menu li {
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .footer_info li:first-child { width: 480px; }
+
+    .footer p { margin: 20px 0 0 30px;}
+
+
+
+/*------------  @media only screen and (max-width:1023px) tablet ------------*/
+    @media only screen and (max-width:1023px) {
+        .info {margin-top: -34px;}
+
+        .site { width: 768px;}
+
+        footer, .footer { width: 768px; height: 200px; }
+    
+        .footer_menu { 
+            width: 768px;
+            padding: 10px 0 0 0;
+        }
+    
+        .footer_menu li { width: 256px; height: 40px;}
+    
+        .footer_info li { height: 30px;}
+    
+        .footer_info li:first-child { width: 600px;}
+    
+        .footer_info li:nth-child(2) { margin-left: 74px;}
+    
+        .footer p { 
+            margin: 10px 0 0 80px;
+            font-size: 12px;
+        }
+    
+        .footer p span { font-size: 4px;}
+    }    
+    
+    }
+
+
+/*------------  @media only screen and (max-width:767px) mobile L------------*/
+    @media only screen and (max-width:767px) {
+    .header { width: 100%;}
+
+    .logo { width: 100%; }
+
+    .logo img { 
+        width: 100px; 
+        margin-right: 10px;
+    }
+    .lnb { height: 360px;}
+
+    .lnb, .gnb, .menu {display: none;}
+
+    .visual { 
+        width: 180%; 
+        margin-left: -42%;
+    }
+
+    .mobile_menu {display: block;}
+
+    .info {  width: 100%; height: 100px;}
+
+    .search { 
+        width: 260px;
+        margin: 2% 0 2% 20%;
+    }
+
+    .search li:nth-child(3), .search_block { display: none;}
+
+    .close { margin: 2% 0 0 14%;}
+
+    .section_01 { 
+        width: 100%; 
+        margin: 10px 0 0 0;
+    }
+
+    .book, .book_sheet  { width: 100%; }
+
+    .book{ height: 360px;}
+
+    .book_label label { width: 50%; }
+
+    .book_sheet { top: 18%;}
+
+    .book_sheet > li { 
+        width: 40%; 
+        margin: 0 0 0 6%;
+    }
+
+    .book_sheet > li img { width: 100%;}
+
+    .book_sheet > li:nth-child(2n) { display: none;}
+
+    .book_sheet li:hover ul { display: none;}
+
+    .book_sheet li:hover p { opacity: 1;}
+
+
+    .board { width: 425px; height: 230px; }
+
+    .board_frame { width: 425px; }
+
+    .board_frame ul { width: 1700px;}
+
+    .board_frame li, .board_frame li img {  width: 425px; }
+
+    .tablet_01 { width: 100%;}
+
+    .icon { 
+        width: 100%; height: 350px;
+        margin: 0 0;
+        padding-top: 30px;
+    }
+
+    .icon ul { 
+        width: 90%; height: 330px;
+        overflow: hidden;
+        margin-left: 5%;
+    }
+
+    .tablet_icon { height: 330px;}
+
+    .icon li {  width: 45%; }
+
+    .icon div { margin: 0 0 7px 60px;}
+
+    .board { margin-top: 0;}
+
+    .yard { 
+        width: 100%; height: 580px;
+        margin: 0;
+    }
+
+    .yard img { width: 100%;}
+
+    .yard h4 { width: 100px;}
+
+    .section_02 { 
+        width: 100%;
+        margin: 0;
+    }
+
+    .notice, .recommend { 
+        width: 100%;
+        margin: 0;
+    }
+
+    .time_sheet { top: 35px; left: 270px; }
+
+    .time_info { margin-left: 15px;}
+
+    .notice_title {  width: 190px;  }
+
+    .recommend_info { 
+        width: 56%;
+        margin: 5px 0 0 8px;
+        font-size: 90%;
+    }
+
+    .recommend_info p { width: 100%; }
+
+
+    .inner_section_03 { 
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .village, .schedule { 
+        width: 100%;
+        margin: 0;
+        border-top: 1px solid #ddd; box-sizing: border-box;
+    }
+
+
+    .village_info { 
+        width: 61%; 
+        margin-left: 3%;
+    }
+
+    .village_info p { font-size: 14px;}
+
+    .web_info { display: none;}
+
+    .mobile_info { display: block;}
+
+    .village_map { margin: 30px 0 0 20px;}
+
+    .village_more { display: none; }
+
+    .schedule {background-color: snow;}
+
+    .schedule_sheet { width: 97%; background-color: white; }
+
+    .schedule_label { margin-left: 3%;}
+
+    .class_title li:first-child, .class_name { width: 50%;}
+
+    .class_title li:nth-child(3), .class_date { width: 50%;}
+
+    .event_title li:first-child, .event_name { width: 55%;}
+
+    .event_title li:nth-child(2), .event_date { width: 45%;}
+
+
+    .site { width: 100%;}
+
+    footer, .footer { width: 100%; height: 300px;}
+
+    .footer ul { width: 100%;}
+
+    .footer li { width: 50%;}
+
+    .footer_info { width: 50%;}
+
+    .footer_info li { height: 40px;}
+
+    .footer_info li:first-child { 
+        width: 100%; height: 30px;
+        font-size: 14px;
+    }
+
+    .footer_info li:nth-child(2) { margin: 0;}
+
+    .footer_info li:last-child { 
+        height: 40px;
+        margin-left: 25%;
+    }
+
+    .footer p { margin: 0 15px;}
+    }
+
+
+    /*------------  @media only screen and (max-width:424px) mobile M ------------*/
+    @media only screen and (max-width:424px) {
+
+    .info {margin-top: -60px;}
+
+    .search { margin: 2% 0 2% 15%;}
+
+    .close { margin: 2% 0 0 12%;}
+
+    .book { height: 320px;}
+
+    .board { width: 375px; height: 210px; }
+
+    .board_frame { width: 375px; }
+
+    .board_frame ul { width: 1500px;}
+
+    .board_frame li, .board_frame li img {  width: 375px; }
+
+    .icon div {margin: 0 0 7px 45px;}
+
+    .yard { height: 520px;}
+
+    .time_info { margin-left: 5px;}
+
+    .village_info { width: 52%;}
+
+    .time_sheet { left: 240px;}
+
+    .village_map { margin: 40px 0 0 20px;}
+
+    .footer_info li span { display: none;}
+    }
+
+    /*------------  @media only screen and (max-width:374px) mobile S ------------*/
+    @media only screen and (max-width:374px) {
+
+    .info { margin-top: -65px;}
+
+    .search { margin: 2% 0 2% 7%;}
+
+    .close { margin: 3% 0 0 6%;}
+
+    .book { height: 300px;}
+
+    .board { width: 320px; height: 185px; }
+
+    .board_frame { width: 320px; }
+
+    .board_frame ul { width: 1280px;}
+
+    .board_frame li, .board_frame li img {  width: 320px; }
+
+    .icon div {margin: 0 0 7px 35px;}
+
+    .yard { height: 445px;}
+
+    .notice_sheet_01 { font-size: 14px;}
+
+    .time_info { margin-left: 0px;}
+
+    .time_sheet { top: 30px; left: 210px;}
+
+    .notice_date span { display: none;}
+
+    .recommend_info h4 span { display: none;}
+
+    .village_info h4 { font-size: 15px;}
+
+    .village_info p { font-size: 12px;}
+
+    .village_map { margin: 50px 0 0 20px;}
+
+    .footer_info li:not(:last-child) { 
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .footer_info li span { display: none;}
+
+    } 

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>다대도서관</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/dadaeLibrary.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="logo">
+                <img src="img/logo.png">
+                <h2>BUSAN METROPOLITAN CITY LIBRARY</h2>
+            </div> <!-- logo -->
+
+            <ul class="gnb">
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>사이트맵</li>
+            </ul> <!-- gnb -->
+        </section> <!-- section_header-->
+    </header> <!-- header -->
+
+    <section class="lnb">
+        <div class="menu">
+                <ul class="main_menu">
+                    <li>도서관소개</li>
+                    <li>이용안내</li>
+                    <li>자료검색</li>
+                    <li>문화강좌</li>
+                    <li>참여마당</li>
+                    <li>내서재</li>
+
+                    <ul class="sub_menu">
+                        <ul>
+                            <li>· 인사말</li>
+                            <li>· 주요연혁</li>
+                            <li>· 도서관현황</li>
+                            <li>· 작은도서관</li>
+                            <li>· 시설안내</li>
+                            <li>· 찾아오시는길</li>
+                        </ul>
+        
+                        <ul>
+                            <li>· 이용시간</li>
+                            <li>· 상호대차</li>
+                            <li>· 통합도서관</li>
+                            <li>· 모바일서비스</li>
+                            <li>· 희망도서신청</li>
+                            <li>· 자료이용안내</li>
+                            <li>· 자료실안내</li>
+                            <li>· 자료실좌석예약</li>
+                            <li>· 책나래서비스</li>
+                        </ul> 
+        
+                        <ul>
+                            <li>· 통합검색</li>
+                            <li>· 신착도서</li>
+                            <li>· 베스트도서</li>
+                            <li>· 정기간행물</li>
+                            <li>· DVD목록</li>
+                        </ul>
+        
+                        <ul>
+                            <li>· 교양강좌</li>
+                            <li>· 독서교실</li>
+                            <li>· 영화상영</li>
+                            <li>· 정보화교육</li>
+                            <li>· 이달의행사</li>
+                            <li>· 독서문화행사</li>
+                            <li>· 온라인수강신청</li>
+                        </ul> 
+        
+                        <ul>
+                            <li>· 공지사항</li>
+                            <li>· 질문답변</li>
+                            <li>· 자주하는질문</li>
+                            <li>· 도서관동호회</li>
+                            <li>· 자유게시판</li>
+                            <li>· 기증도서</li>
+                            <li>· 자원봉사</li>
+                            <li>· 설문조사</li>
+                        </ul>
+        
+                        <ul>
+                            <li>· 도서이용정보</li>
+                            <li>· 도서신청내역</li>
+                            <li>· 관심도서</li>
+                            <li>· 추천도서</li>
+                            <li>· 프로그램신청내역</li>
+                            <li>· 개인정보서비스</li>
+                        </ul>
+                    </ul> <!-- sub_menu -->
+                </ul> <!-- main_menu -->
+        </div><!-- menu -->
+    </section> <!-- lnb -->
+
+    <input type="checkbox" name="mobile_menu" id="menu">
+    <div class="mobile_menu">
+    <label for="menu" class="menu_open"><img src="img/menu_open.png"></label>
+    <label for="menu" class="menu_close"><img src="img/menu_close.png"></label>
+        <ul>
+            <li class="mobile_main_menu"><h3>로그인</h3></li>
+            <li class="mobile_main_menu"><h3>회원가입</h3></li>
+            <li class="mobile_main_menu"><h3>도서관소개<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 인사말</li>
+                    <li>· 주요연혁</li>
+                    <li>· 도서관현황</li>
+                    <li>· 작은도서관</li>
+                    <li>· 시설안내</li>
+                    <li>· 찾아오시는길</li>
+                </ul>
+            </li>
+
+            <li class="mobile_main_menu"><h3>이용안내<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 이용시간</li>
+                    <li>· 상호대차</li>
+                    <li>· 통합도서관</li>
+                    <li>· 모바일서비스</li>
+                    <li>· 희망도서신청</li>
+                    <li>· 자료이용안내</li>
+                    <li>· 자료실안내</li>
+                    <li>· 자료실좌석예약</li>
+                    <li>· 책나래서비스</li>
+                </ul>
+            </li>
+
+            <li class="mobile_main_menu"><h3>자료검색<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 통합검색</li>
+                    <li>· 신착도서</li>
+                    <li>· 베스트도서</li>
+                    <li>· 정기간행물</li>
+                    <li>· DVD목록</li>
+                </ul>
+            </li>
+
+            <li class="mobile_main_menu"><h3>문화강좌<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 교양강좌</li>
+                    <li>· 독서교실</li>
+                    <li>· 영화상영</li>
+                    <li>· 정보화교육</li>
+                    <li>· 이달의행사</li>
+                    <li>· 독서문화행사</li>
+                    <li>· 온라인수강신청</li>
+                </ul>
+            </li>
+
+            <li class="mobile_main_menu"><h3>참여마당<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 공지사항</li>
+                    <li>· 질문답변</li>
+                    <li>· 자주하는질문</li>
+                    <li>· 도서관동호회</li>
+                    <li>· 자유게시판</li>
+                    <li>· 기증도서</li>
+                    <li>· 자원봉사</li>
+                    <li>· 설문조사</li>
+                </ul>
+            </li>
+
+            <li class="mobile_main_menu"><h3>내서재<span class="menu_minus">- </span><span class="menu_plus"> + </span></h3>
+                <ul class="mobile_sub_menu">
+                    <li>· 도서신청내역</li>
+                    <li>· 관심도서</li>
+                    <li>· 추천도서</li>
+                    <li>· 프로그램신청내역</li>
+                    <li>· 개인정보서비스</li>
+                </ul>
+            </li>
+
+        </ul> 
+    </div> <!-- mobile_menu -->
+
+    <section class="visual_main">
+        <div class="visual">
+            <img src="img/visual_01.jpg">
+        </div>
+    </section> <!-- section_visual -->
+
+    <section class="info">
+        <ul class="search">
+            <li>
+                <select class="search_select">
+                    <option>도서검색</option>
+                    <option>저자</option>
+                    <option>출판사</option>
+                    <option>키워드</option>
+                </select>
+            </li>
+
+            <li>
+                <input type="text" placeholder="검색어를 입력하세요." class="search_text">
+                <img src="img/search_icon.png">
+            </li>
+
+            <li>〈인기검색어〉</li>
+
+            <li class="search_block">
+                <ul id="search_list">
+                    <li>경애의마음</li>
+                    <li>비행운</li>
+                    <li>모순</li>
+                    <li>채식주의자</li>
+                    <li>나목</li>
+                </ul>
+        
+                <ul class="search_nav">
+                    <li class="search_prev">▲</li>
+                    <li class="search_next">▼</li>
+                </ul>
+            </li>
+
+        </ul> <!-- search -->
+
+        <ul class="close">
+            <li><img src="img/close.png"></li>
+            <li>휴관일</li>
+            <li>1</li>
+            <li>6</li>
+            <li>13</li>
+            <li>20</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+        </ul> <!-- close -->
+    </section> <!-- section_info -->
+
+    <section class="tablet_01">
+        <section class="section_01">
+                <div class="book">
+                    <input type="radio" name="book" id="book_01" checked>
+                    <input type="radio" name="book" id="book_02">
+
+                    <div class="book_label">
+                        <label for="book_01" class="book_01_label">신착도서</label>
+                        <label for="book_02" class="book_02_label">인기도서</label>
+                    </div>
+
+                    <ul class="book_sheet book_sheet_01">
+                        <li>
+                            <img src="img/new_01.jpg">
+                            <p>마음의 구석</p>
+                            <ul class="book_info">
+                                <li>저자 : 서밤, 블블, 봄봄</li>
+                                <li>발행처 : 문학동네, 2019</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 국내 에세이</li>
+                                <li>대출가능여부 : 가능</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <img src="img/new_02.jpg">
+                            <p>핵을 들고 도망친 101세 노인</p>
+                            <ul class="book_info">
+                                <li>저자 : 요나스 요나손</li>
+                                <li>발행처 : 열린책들, 2019</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 외국 소설</li>
+                                <li>대출가능여부 : 가능</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <img src="img/new_03.jpg">
+                            <p>지대넓얕 0</p>
+                            <ul class="book_info">
+                                <li>저자 : 채사장</li>
+                                <li>발행처 : 웨일북, 2019</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 국내 인문 교양 일반</li>
+                                <li>대출가능여부 : 불가</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+
+                    </ul> <!-- book_sheet_01 -->
+
+                    <ul class="book_sheet book_sheet_02">
+                        <li>
+                            <img src="img/best_01.jpg">
+                            <p>열한계단</p>
+                            <ul class="book_info">
+                                <li>저자 : 채사장</li>
+                                <li>발행처 : 웨일북, 2016</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 국내 인문 교양 일반</li>
+                                <li>대출가능여부 : 가능</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <img src="img/best_02.jpg">
+                            <p>총균쇠</p>
+                            <ul class="book_info">
+                                <li>저자 : 재레드 다이아몬드</li>
+                                <li>발행처 : 옮김문학사상사, 1998</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 외국 사회 정치 문화</li>
+                                <li>대출가능여부 : 불가</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img src="img/best_03.jpg">
+                            <p>사피엔스</p>
+                            <ul class="book_info">
+                                <li>저자 : 유발 하라리</li>
+                                <li>발행처 : 김영사, 2015</li>
+                                <li>자료실 : 종합자료실</li>
+                                <li>자료형태 : 도서</li>
+                                <li>카테고리 : 외국 인문 교양 일반</li>
+                                <li>대출가능여부 : 불가</li>
+                                <li class="book_detail">상세보기</li>
+                            </ul>
+                        </li>
+
+                    </ul> <!-- book_sheet_02 -->
+                </div> <!-- book -->
+
+                <div class="board">
+                    <h4>다대도서관 문화강좌 알림판</h4>
+            
+                    <div class="board_banner">
+                        <div class="board_frame">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="img/board_01.jpg"></a>
+                                </li>
+            
+                                <li>
+                                    <a href="#"><img src="img/board_02.jpg"></a>
+                                </li>
+            
+                                <li>
+                                    <a href="#"><img src="img/board_03.jpg"></a>
+                                </li>
+            
+                                <li>
+                                    <a href="#"><img src="img/board_04.jpg"></a>
+                                </li>
+                            </ul>
+                        </div>  <!-- board_frame -->
+                    </div> <!-- board_banner -->
+            
+                    <div class=board_ctr_btn>   
+                        <a href="#board_stop" class="board_stop"><img src="img/board_icon_02.png"></a>
+                        <a href="#board_play" class="board_play"><img src="img/board_icon_03.png"></a>
+                    </div>  
+            
+                    <div class="btn">
+                        <a href="#board_left" class="board_left"><img src="img/board_icon_01.png"></a>
+                        <a href="#board_right" class="board_right"><img src="img/board_icon_04.png"></a>            
+                    </div> 
+                </div> <!-- board -->
+        </section> <!-- section_01-->
+
+        <div class="icon tablet_icon">
+            <ul>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_01.png"></div>
+                    내서재
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_02.png"></div>
+                    희망도서신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_03.png"></div>
+                    상호대차신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_04.png" class="icon_04"></div>
+                    문화강좌신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_05.png"></div>
+                    자료실좌석예약
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_06.png"></div>
+                    부산통합도서관
+                </li>
+            </ul>
+        </div> <!-- tablet_icon -->
+
+        <div class="yard">
+            <h4>알림마당</h4>
+            <input type="radio" name="yard" id="yard_01" checked>
+            <input type="radio" name="yard" id="yard_02">
+            <input type="radio" name="yard" id="yard_03">
+
+            <div class="yard_label">
+                <label for="yard_01" class="yard_01_label"><div><span></span></div></label>
+                <label for="yard_02" class="yard_02_label"><div><span></span></div></label>
+                <label for="yard_03" class="yard_03_label"><div><span></span></div></label>
+            </div>
+
+            <img src="img/yard_01.jpg" class="yard_01">
+            <img src="img/yard_02.jpg" class="yard_02">
+            <img src="img/yard_03.jpg" class="yard_03">
+        </div> <!-- yard -->
+
+        <div class="icon web_icon">
+            <ul>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_01.png"></div>
+                    내서재
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_02.png"></div>
+                    희망도서신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_03.png"></div>
+                    상호대차신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_04.png"  class="icon_04"></div>
+                    문화강좌신청
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_05.png"></div>
+                    자료실좌석예약
+                </li>
+                <li>
+                    <div class="icon_film"></div>
+                    <div><img src="img/icon_06.png"></div>
+                    부산통합도서관
+                </li>
+            </ul>
+        </div> <!-- web_icon -->
+
+        <section class="section_02">
+            <div class="notice">
+                <input type="radio" name="notice" id="notice_01" checked> 
+                <input type="radio" name="notice" id="notice_02">
+                
+                <div class="notice_label">
+                    <label for="notice_01" class="notice_01_label">이용시간</label>
+                    <label for="notice_02" class="notice_02_label">공지사항</label>
+                </div>
+
+                <div class="notice_sheet notice_sheet_01">
+                    <input type="radio" name="time" id="time_01" checked>
+                    <input type="radio" name="time" id="time_02">
+                    <input type="radio" name="time" id="time_03">
+
+                    <div class="time_label">
+                        <label for="time_01" class="time_01_label">화 - 금</label>
+                        <label for="time_02" class="time_02_label">토</label>
+                        <label for="time_03" class="time_03_label">일</label>
+                    </div>
+
+                    <ul class="time_info">
+                        <li><span>5층</span>종합자료실, 다문화누리자료실</li>
+                        <li><span>4층</span> 디지털자료실, 연속간행물실</li>
+                        <li><span>3층</span> 자유열람실, 공용사물함</li>
+                        <li><span>2층</span> 어린이열람실, 이야기숲</li>
+                    </ul>
+                    
+                    
+                    <ul class="time_sheet time_sheet_01">
+                        <li>09:00 ~ 22:00</li>
+                        <li>09:00 ~ 18:00</li>
+                        <li>07:00 ~ 23:00</li>
+                        <li>09:00 ~ 20:00</li>
+                    </ul>
+                    
+                    <ul class="time_sheet time_sheet_02">
+                        <li>09:00 ~ 18:00</li>
+                        <li>09:00 ~ 18:00</li>
+                        <li>07:00 ~ 23:00</li>
+                        <li>09:00 ~ 18:00</li>
+                    </ul>
+                    
+                    <ul class="time_sheet time_sheet_03">
+                        <li>09:00 ~ 17:00</li>
+                        <li>09:00 ~ 17:00</li>
+                        <li>07:00 ~ 23:00</li>
+                        <li>09:00 ~ 17:00</li>
+                    </ul>
+
+
+                </div> <!-- notice_sheet_01 -->
+
+                <div class="notice_sheet notice_sheet_02">
+                    <ul class="notice_title">
+                        <li>설날 연휴 전 도서 택배 서비스 배달 일정 안내</li>
+                        <li>책읽는 가족 운영 안내</li>
+                        <li>어린이 독서왕 선정 안내</li>
+                        <li>2020년 1월 도서관 구내식당 하늬마루 식단표</li>
+                        <li>도서관 통합 웹 서비스 일시 중단 안내 사항</li>
+                        <li>책이음 서비스 이용자 만족도 설문조사</li>
+                    </ul>
+
+                    <ul class="notice_date">
+                        <li><span>2020-</span>01-15</li>
+                        <li><span>2020-</span>01-14</li>
+                        <li><span>2020-</span>01-09</li>
+                        <li><span>2020-</span>01-03</li>
+                        <li><span>2020-</span>01-02</li>
+                        <li><span>2020-</span>01-02</li>
+                    </ul>
+                </div> <!-- notice_sheet_02 -->
+            </div> <!-- notice -->
+
+            <div class="recommend">
+                <h3>추천도서</h3>
+                    <img src="img/recommend_01.jpg">
+                    <div class="recommend_info">
+                        <h3>자기 앞의 생</h3>
+                        <h4>저자 : 로맹 가리 <span>(번역 용경식)</span></h4>
+                        <p>&nbsp;어느 날 꼬마 모모는 하밀 할아버지에게 묻는다. 사람은 사랑<br>
+                            없이도 살 수 있나요? 할아버지는 그렇다고 말한다.  물론이다. <br>
+                            우린 사랑 없이도 살 수 있다. 그러나 이 책을 읽고 나면 아마<br>
+                            당신은 이 꼬마가 말하는 '사람은 사랑 없이는 살 수 없다'는<br>
+                            말에 동의하게 될 것이다.<br>
+                            &nbsp;『자기 앞의 생』은 ‘삶에 대한 무한하고도 깊은 애정’이 담겨<br>
+                            있는 소설이다. 그럼에도 불구하고 또한 아픈 소설 이다. 어린 그에겐<br>
+                        </p>
+                    </div>
+            </div> <!-- recommend -->
+        </section>
+    </section> <!-- tablet_01-->
+    
+    <section class="section_03">
+        <div class="inner_section_03">
+            <div class="village">
+                <div class="village_info">
+                    <h3>우리동네 작은도서관</h3>
+                    <h4 class="web_info">작은도서관은<br>
+                        배움 · 나눔 · 기쁨 · 행복이 넘치는<br>
+                        사하구의 열린 학습장입니다.
+                    </h4>
+                    <h4 class="mobile_info">작은도서관은 배움 · 나눔 · 기쁨 · 행복이 넘치는 사하구의 열린 학습장입니다.</h4>
+
+                    <p>지도를 클릭하시면<br>작은도서관의 정보가 나타납니다.</p>
+
+                    <input type="button" value="전체 목록 보기" class="village_more">
+                </div>
+
+                <div class="village_map">
+                    <img src="img/map.png"  usemap="#Map">
+                    <map name="Map">
+                        <area shape="poly" coords="56,16,36,120,5,115,49,19" href="https://map.naver.com/v5/entry/place/36819257?c=14353471.7702185,4175889.8143472,15,0,0,0,dh" target="_blank"> <!-- 을숙도 -->
+                        <area shape="poly" coords="75,17,122,18,105,61,71,62" href="https://map.naver.com/v5/entry/place/32021648?c=14355354.0320400,4179475.1887052,15,0,0,0,dh" target="_blank"> <!-- 하단 2동-->
+                        <area shape="poly" coords="70,62,107,61,109,83,66,84" href="https://map.naver.com/v5/entry/place/877078735?c=14355884.3139237,4177824.6266257,15,0,0,0,dh" target="_blank"> <!-- 하단 1동-->
+                        <area shape="poly" coords="121,20,187,24,119,90,105,86,108,70,105,61" href="https://map.naver.com/v5/entry/place/35410794?c=14356653.4615208,4178316.6899953,15,0,0,0,dh" target="_blank"> <!-- 당리동 -->
+                        <area shape="poly" coords="153,50,134,98,122,87" href="https://map.naver.com/v5/entry/place/11836927?c=14361188.3578767,4190403.6878196,15,0,0,0,dh" target="_blank"> <!-- 괴정 3동-->
+                        <area shape="poly" coords="154,50,166,98,153,108,137,103" href="https://www.smalllibrary.org/library/detail/1047599" target="_blank"> <!-- 괴정 1동 -->
+                        <area shape="poly" coords="157,44,178,28,182,88,165,95" href="https://map.naver.com/v5/entry/place/21270133?c=14358069.9352012,4178221.1437099,15,0,0,0,dh" target="_blank"> <!-- 괴정 4동 -->
+                        <area shape="poly" coords="178,27,212,55,205,79,182,87" href="https://map.naver.com/v5/entry/place/33121951?c=14360453.8150209,4178089.7675676,15,0,0,0,dh" target="_blank"> <!-- 괴정 2동 -->
+                        <area shape="poly" coords="65,86,80,86,91,79,104,85,97,125,92,132,55,144" href="https://map.naver.com/v5/entry/place/19802172?c=14355296.7042688,4176990.9852860,15,0,0,0,dh" target="_blank"> <!-- 신평 2동 -->
+                        <area shape="poly" coords="105,85,137,108,138,128,95,126,93,111,95,105" href="https://map.naver.com/v5/entry/place/21885827?c=14357071.4765193,4176537.1404305,15,0,0,0,dh" target="_blank"> <!-- 신평 1동  -->
+                        <area shape="poly" coords="55,145,100,126,120,128,94,183,61,167" href="https://map.naver.com/v5/entry/place/21270138?c=14356077.7951516,4174922.4082080,15,0,0,0,dh" target="_blank"> <!-- 장림 1동 -->
+                        <area shape="poly" coords="120,128,133,129,138,172,97,183,100,148" href=" https://map.naver.com/v5/entry/place/38642900?c=14357372.4473181,4174459.0087240,15,0,0,0,dh" target="_blank"> <!-- 장림 2동 -->
+                        <area shape="poly" coords="139,106,172,132,178,230,135,179" href="https://map.naver.com/v5/entry/place/1254141560?c=14358165.4814866,4175634.2280339,15,0,0,0,dh" target="_blank"> <!-- 구평동 -->
+                        <area shape="poly" coords="155,108,184,90,207,116,201,154,169,140" href="https://map.naver.com/v5/entry/place/36326974?c=14359904.4238801,4176100.0161750,15,0,0,0,dh" target="_blank"> <!-- 감천 1동 -->
+                        <area shape="poly" coords="185,86,204,78,215,116,189,110" href="https://map.naver.com/v5/entry/place/11836924?c=14360781.0610482,4176988.5966288,15,0,0,0,dh" target="_blank"> <!-- 감천 2동 -->
+                        <area shape="poly" coords="64,168,105,186,138,244,90,292" href="https://map.naver.com/v5/entry/place/36817703?c=14355975.0828948,4170899.9095945,15,0,0,0,dh" target="_blank"> <!-- 다대 1동-->
+                        <area shape="poly" coords="107,186,132,176,182,239,163,260,145,212,122,213" href="https://map.naver.com/v5/entry/place/11836929?c=14357764.1870881,4172514.6418170,15,0,0,0,dh" target="_blank"> <!-- 다대 2동 -->
+                    </map>
+                </div>
+            </div> <!-- village -->
+            
+            <div class="schedule">
+                <input type="radio" name="schedule" id="schedule_01" checked> 
+                <input type="radio" name="schedule" id="schedule_02">
+
+                <div class="schedule_label">
+                    <label for="schedule_01" class="schedule_01_label">문화강좌</label>
+                    <label for="schedule_02" class="schedule_02_label">행사일정</label>
+                </div>
+
+                <div class="schedule_sheet schedule_sheet_01">
+                    <ul class="class_title">
+                        <li>강좌명</li>
+                        <li>대상</li>
+                        <li>강좌일시</li>
+                        <li>접수현황</li>
+                    </ul>
+
+                    <ul class="class_name">
+                        <li>주부 영어교실 1기</li>
+                        <li>놀이과학 독서교실</li>
+                        <li>어린이 책놀이수업</li>
+                        <li>글속독서회</li>
+                    </ul>
+
+                    <ul class="class_age">
+                        <li>기혼 여성</li>
+                        <li>초등학교 4~6학년</li>
+                        <li>5~7세 미취학아동</li>
+                        <li>성인</li>
+                    </ul>
+
+                    <ul class="class_date">
+                        <li>2020년 2월~4월</li>
+                        <li>2020년 2월~4월</li>
+                        <li>2020년 2월~6월</li>
+                        <li>2020년 2월~10월</li>
+                    </ul>
+
+                    <ul class="class_state">
+                        <li>마감임박</li>
+                        <li>접수중</li>
+                        <li>접수중</li>
+                        <li>접수마감</li>
+                    </ul>
+                </div> <!-- schedule_sheet_01 -->
+
+                <div class="schedule_sheet schedule_sheet_02">
+                    <ul class="event_title">
+                        <li>행사명</li>
+                        <li>일시</li>
+                        <li>장소</li>
+                    </ul>
+                    <ul class="event_name">
+                        <li>여행 에세이 팝업북 DIY</li>
+                        <li>동화구현 콘서트 aka.쇼미더북</li>
+                        <li>서늘한 여름밤의 힐링 북콘서트</li>
+                        <li>두 단어로 책 제목 맞추기 대회</li>
+                    </ul>
+
+                    <ul class="event_date">
+                        <li><span>2020년 </span>1월 25일 토요일</li>
+                        <li><span>2020년 </span>2월 8일 토요일</li>
+                        <li><span>2020년 </span>2월 14일 금요일 </li>
+                        <li><span>2020년 </span>2월 15일 토요일</li>
+                    </ul>
+                    
+                    <ul class="event_place">
+                        <li>4층 교양강좌실</li>
+                        <li>2층 어린이열람실</li>
+                        <li>4층 교양강좌실</li>
+                        <li>지하 1층 시청각실</li>
+                    </ul>
+                </div> <!-- schedule_sheet_02 -->
+            </div> <!-- schedule -->
+        </div> <!-- inner_section_03 -->
+    </section> <!-- section_03 -->
+
+    <div class="site">
+        <ul>
+            <li>국립중앙도서관</li>
+            <li>국가전자도서관</li>
+            <li>국가지식포털</li>
+            <li>한국학술정보</li>
+            <li>부산광역시</li>
+            <li>사하구</li>
+            <li>책바다</li>
+            <li>책나래</li>
+            <li>누리미디어</li>
+            <li>다대사회복지관</li>
+            <li>부산시민도서관</li>
+            <li>부산영어도서관</li>
+            <li>부산전자도서관</li>
+            <li>부산점자도서관</li>
+            <li>부산영어방송</li>
+            <li>어린이청소년도서관</li>
+            <li>국립중앙도서관</li>
+            <li>국가전자도서관</li>
+            <li>국가지식포털</li>
+            <li>한국학술정보</li>
+            <li>부산광역시</li>
+            <li>사하구</li>
+            <li>책바다</li>
+            <li>책나래</li>
+            <li>누리미디어</li>
+            <li>다대사회복지관</li>
+            <li>부산시민도서관</li>
+            <li>부산영어도서관</li>
+            <li>부산전자도서관</li>
+            <li>부산점자도서관</li>
+            <li>부산영어방송</li>
+            <li>어린이청소년도서관</li>
+        </ul>
+    </div> <!-- site -->
+
+    <footer>
+        <div class="footer">
+            <ul class="footer_menu">
+                <li>개인정보처리방침</li>
+                <li>이메일무단수집거부</li>
+                <li>행정서비스</li>
+                <li>도서관현장</li>
+                <li>사물함신청</li>
+                <li>뷰어다운로드</li>
+            </ul>
+
+            <ul class="footer_info">
+                <li>(우)49504 부산광역시 사하구 다대낙조2길 9  <span>다대동</span>다대도서관</li>
+                <li>TEL: 051)220-5861~3</li>
+                <li>FAX: 051-220-5869</li>
+                <li>
+                    <select class="familly">
+                        <option>부산광역시교육청</option>
+                        <option>학부모지원센터</option>
+                        <option>부산광역시교육연구정보원</option>
+                        <option>부산광역시교육연수원</option>
+                        <option>부산시립중앙도서관</option>
+                    </select>
+                </li>
+            </ul>
+            
+            <p>Copyright 2020 kka0 All rights reserved.
+                <span>본 사이트는 개인 포트폴리오 사용 목적으로 재가공되었습니다.
+                    다대도서관과 무관한 사이트임을 알립니다.</span>
+            </p>
+        </div> <!-- footer -->
+    </footer>
+
+</body>
+</html>
